@@ -42,27 +42,6 @@ void main() {
   ]);
 }
 
-// TODO: Do not use
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MultiProvider(
-      providers: [
-        ChangeNotifierProvider<GreatPlaces>(
-          create: (ctx) => GreatPlaces(),
-        ),
-        ChangeNotifierProvider<WeatherPlace>(
-          create: (ctx) => WeatherPlace(),
-        ),
-        ChangeNotifierProvider<ThemeNotifier>(
-          create: (ctx) => ThemeNotifier(normalTheme),
-        ),
-      ],
-      child: MyMaterialApp(),
-    );
-  }
-}
-
 class MyMaterialApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
